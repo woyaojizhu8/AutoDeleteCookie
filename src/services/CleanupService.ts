@@ -49,16 +49,7 @@ export const isSafeToClean = (
     ? OpenTabStatus.TabsWereIgnored
     : OpenTabStatus.TabsWasNotIgnored;
 
-  // Tests if the main domain is open
-  if (openTabDomains.has(mainDomain)) {
-    return {
-      cached: false,
-      cleanCookie: false,
-      cookie: cookieProperties,
-      openTabStatus,
-      reason: ReasonKeep.OpenTabs,
-    };
-  }
+
 
   // Checks the list for the first available match
   const matchedExpression = returnMatchedExpressionObject(
