@@ -1,0 +1,420 @@
+{
+  "extensionName": {
+    "message": "AutoDeleteCookie",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "掌控你的 Cookie！关闭标签页后自动删除未想保留的 Cookie。您可以设置想要保留的白名单。",
+    "description": "Control your cookies! Auto-delete unused cookies from your closed tabs while keeping the ones you want."
+  },
+  "notificationTitle": {
+    "message": "AutoDeleteCookie：Cookie 已删除！",
+    "description": "AutoDeleteCookie: Cookies were deleted!"
+  },
+  "notificationContent": {
+    "message": "已删除 $Num$ 个下列网站的 Cookie：$Websites$",
+    "description": "123 Deleted Cookies from: google.com, facebook.com",
+    "placeholders": {
+      "num": {
+        "content": "$1",
+        "example": "123"
+      },
+      "websites": {
+        "content": "$2",
+        "example": "google.com, facebook.com"
+      }
+    }
+  },
+  "filterText": {
+    "message": "过滤",
+    "description": "Filter"
+  },
+  "noneText": {
+    "message": "无",
+    "description": "None"
+  },
+  "cleanText": {
+    "message": "清理",
+    "description": "Clean"
+  },
+  "keepText": {
+    "message": "保留",
+    "description": "Keep"
+  },
+  "cookieCleanupText": {
+    "message": "立即清理",
+    "description": "Run cleanup now"
+  },
+  "cleanIgnoringOpenTabsText": {
+    "message": "清理，包括已打开标签页",
+    "description": "Clean, include open tabs"
+  },
+  "cookieCleanupIgnoreOpenTabsText": {
+    "message": "立即清理，包括已打开标签页的 Cookie",
+    "description": "Run cleanup now, include cookies from open tabs"
+  },
+  "clearSiteDataText": {
+    "message": "清除此域的 $siteData$",
+    "description": "Clear cookies for this domain",
+    "placeholders": {
+      "siteData": {
+        "content": "$1",
+        "example": "cookies"
+      }
+    }
+  },
+  "clearSiteDataForDomainText": {
+    "message": "清除 $domain$ 的 $siteData$",
+    "description": "Clear all cookies for example.com",
+    "placeholders": {
+      "siteData": {
+        "content": "$1",
+        "example": "cookies"
+      },
+      "domain": {
+        "content": "$2",
+        "example": "example.com"
+      }
+    }
+  },
+  "noRulesText": {
+    "message": "没有匹配此域的规则",
+    "description": "No rules matched this domain"
+  },
+  "welcomeText": {
+    "message": "欢迎使用",
+    "description": "Welcome"
+  },
+  "preferencesText": {
+    "message": "设置",
+    "description": "Settings"
+  },
+  "optionsText": {
+    "message": "Options",
+    "description": "Options"
+  },
+  "settingsText": {
+    "message": "Cookie 设置",
+    "description": "Cookie Settings"
+  },
+  "whiteListText": {
+    "message": "例外名单",
+    "description": "List of Expressions"
+  },
+  "cleanupLogText": {
+    "message": "清理日志",
+    "description": "Cleanup Log"
+  },
+  "aboutText": {
+    "message": "关于",
+    "description": "About"
+  },
+  "welcomeMessage": {
+    "message": "AutoDeleteCookie 在本次会话期间已删除 $sessionDeleted$ 个 Cookie；累计已删除 $totalDeleted$ 个 Cookie。",
+    "description": "Hi there! During this session, AutoDeleteCookie has deleted 123 cookies and in total 456 cookies.",
+    "placeholders": {
+      "sessionDeleted": {
+        "content": "$1",
+        "example": "123"
+      },
+      "totalDeleted": {
+        "content": "$2",
+        "example": "456"
+      }
+    }
+  },
+  "reasonKeepOpenTab": {
+    "message": "保留，因为*.$mainDomain$在打开的标签页中",
+    "description": "Keep because of open tabs of *.google.com",
+    "placeholders": {
+      "mainDomain": {
+        "content": "$1",
+        "example": "google.com"
+      }
+    }
+  },
+  "reasonCleanStartupNoList": {
+    "message": "清理，因为自启动清理同时$hostname$不在白灰名单中",
+    "description": "Clean because of startup cleanup and sub.google.com is not in the White\/Grey lists",
+    "placeholders": {
+      "hostname": {
+        "content": "$1",
+        "example": "sub.google.com"
+      }
+    }
+  },
+  "reasonCleanGreyList": {
+    "message": "清理，因为自启动清理同时$matchedExpression$在灰名单中",
+    "description": "Clean because of startup cleanup and *.google.com is in the Greylist",
+    "placeholders": {
+      "matchedExpression": {
+        "content": "$1",
+        "example": "*.google.com"
+      }
+    }
+  },
+  "reasonCleanNoList": {
+    "message": "清理，因为$hostname$不在白灰名单中",
+    "description": "Clean because sub.google.com is not in the White\/Grey lists",
+    "placeholders": {
+      "hostname": {
+        "content": "$1",
+        "example": "sub.google.com"
+      }
+    }
+  },
+  "reasonKeep": {
+    "message": "保留因为匹配了$listType$中的$matchedExpression$",
+    "description": "Keep because of matched *.google.com in the Whitelist",
+    "placeholders": {
+      "matchedExpression": {
+        "content": "$1",
+        "example": "*.google.com"
+      },
+      "listType": {
+        "content": "$2",
+        "example": "Whitelist"
+      }
+    }
+  },
+  "reasonCleanCookieName": {
+    "message": "Partial clean because of matched $matchedExpression$ in the $listType$",
+    "description": "Partial clean because of matched *.google.com in the Whitelist",
+    "placeholders": {
+      "matchedExpression": {
+        "content": "$1",
+        "example": "*.google.com"
+      },
+      "listType": {
+        "content": "$2",
+        "example": "Whitelist"
+      }
+    }
+  },
+  "reasonTabsWereNotIgnored": {
+    "message": "或者在任何已打开的标签页中",
+    "description": "Clean because of sub.google.com is not in the White\/Grey lists or in any open tabs"
+  },
+  "reasonTabsWereIgnored": {
+    "message": "同时已打开的标签页被忽略",
+    "description": "Clean because of sub.google.com is not in the White\/Grey lists and also open tabs were ignored"
+  },
+  "reviewLinkMessage": {
+    "message": "感谢您尝试 AutoDeleteCookie。如果您喜欢，请来评价吧。",
+    "description": "Thanks for trying out AutoDeleteCookie. If you liked it, then please give a review."
+  },
+  "releaseNotesText": {
+    "message": "发行日志",
+    "description": "Release Notes"
+  },
+  "activeModeText": {
+    "message": "启用主动模式？清理前延迟：",
+    "description": "Enable Automatic Cleaning? Delay Before Cleaning:"
+  },
+  "minutesText": {
+    "message": "分钟",
+    "description": "Minute(s)"
+  },
+  "secondsText": {
+    "message": "秒",
+    "description": "Second(s)"
+  },
+  "cleanupDomainChangeText": {
+    "message": "启用域变更时清理",
+    "description": "Enable Cleanup on Domain Change"
+  },
+  "enableCleanupLogText": {
+    "message": "启用清理日志和计数器",
+    "description": "Enable Cleanup Log and Counter"
+  },
+  "keepLocalstorageText": {
+    "message": "Keep Localstorage",
+    "description": "Keep Localstorage"
+  },
+  "keepAllCookiesText": {
+    "message": "Keep All Cookies",
+    "description": "Keep All Cookies"
+  },
+  "clearLogsText": {
+    "message": "清除日志",
+    "description": "Clear Logs"
+  },
+  "errorText": {
+    "message": "Error!",
+    "description": "Error!"
+  },
+  "restoreText": {
+    "message": "Restore",
+    "description": "Ex: Restore Cleanup"
+  },
+  "showNumberOfCookiesInIconText": {
+    "message": "显示该域名的 Cookie 数量",
+    "description": "Show Number of Cookies for that Domain"
+  },
+  "notifyCookieCleanUpText": {
+    "message": "清理 Cookie 后显示通知",
+    "description": "Show Notification After Cookie Cleanup"
+  },
+  "cookieCleanUpOnStartText": {
+    "message": "启动时清理打开标签页的 Cookie",
+    "description": "Clean Cookies from Open Tabs on Startup"
+  },
+  "enableGlobalSubdomainText": {
+    "message": "启用对子域的检查",
+    "description": "Enable Check for Subdomains"
+  },
+  "contextualIdentitiesEnabledText": {
+    "message": "启用对 Firefox 身份（容器）功能的支持",
+    "description": "Enable Support for Firefox's Container Tabs"
+  },
+  "localstorageCleanupText": {
+    "message": "本地存储清理（Firefox 58+）",
+    "description": "Localstorage Cleanup (Firefox 58+)"
+  },
+  "localstorageAndContextualIdentitiesWarning": {
+    "message": "由于 API 限制，同时启用本地存储清理和容器（身份）标签页可能导致一些不想要的副作用",
+    "description": "Enabling both Localstorage Cleanup and Container Tabs might cause some unwanted side effects due to API Limitations"
+  },
+  "defaultSettingsText": {
+    "message": "恢复默认设置",
+    "description": "Restore Default Settings"
+  },
+  "whiteListWordText": {
+    "message": "白名单",
+    "description": "Whitelist"
+  },
+  "greyListWordText": {
+    "message": "灰名单",
+    "description": "Greylist"
+  },
+  "toWhiteListText": {
+    "message": "添加到白名单（永不清理）",
+    "description": "Add to Whitelist (Never Clean)"
+  },
+  "toGreyListText": {
+    "message": "添加到灰名单（浏览器重启时清理）",
+    "description": "Add to Greylist (Clean on Browser Restart)"
+  },
+  "clearURLText": {
+    "message": "全部移除",
+    "description": "Remove All"
+  },
+  "exportURLSText": {
+    "message": "导出表达式",
+    "description": "Export Expressions"
+  },
+  "exportURLSTitle": {
+    "message": "导出时将会在文件名后面追加一个时间戳。\n下载有问题？右击此按钮，选择“链接另存为...”来下载。",
+    "description": "A timestamp will be appended to the filename on export.\nHaving trouble downloading?  Right-Click this button and click 'Save Link As...' to download."
+  },
+  "questionExpression": {
+    "message": "How do Expressions work?",
+    "description": "How do Expressions work?"
+  },
+  "importURLSText": {
+    "message": "导入表达式",
+    "description": "Import Expressions"
+  },
+  "reportIssuesText": {
+    "message": "报告问题和建议功能",
+    "description": "Report issues and suggest features"
+  },
+  "versionText": {
+    "message": "$browser$ 版本",
+    "description": "Firefox version",
+    "placeholders": {
+      "browser": {
+        "content": "$1",
+        "example": "Firefox"
+      }
+    }
+  },
+  "contributorsText": {
+    "message": "贡献者：",
+    "description": "Contributors:"
+  },
+  "contributeText": {
+    "message": "捐助",
+    "description": "Contribute"
+  },
+  "domainExpressionsText": {
+    "message": "域名表达式",
+    "description": "Domain Expression"
+  },
+  "matchedDomainExpressionText": {
+    "message": "匹配的域名表达式",
+    "description": "Matched Domain Expression"
+  },
+  "regularExpressionEquivalentText": {
+    "message": "正则表达式等效",
+    "description": "Regular Expression Equivalent"
+  },
+  "listTypeText": {
+    "message": "列表类型",
+    "description": "List Type"
+  },
+  "domainPlaceholderText": {
+    "message": "example.com, subdomain.example.com, *.example.com",
+    "description": "Domain Expression"
+  },
+  "noExpressionsText": {
+    "message": "未定义表达式。",
+    "description": "No expressions defined."
+  },
+  "removeExpressionText": {
+    "message": "移除表达式",
+    "description": "Remove expression"
+  },
+  "stopEditingText": {
+    "message": "停止编辑",
+    "description": "Stop editing"
+  },
+  "saveExpressionText": {
+    "message": "保存表达式",
+    "description": "Save expression"
+  },
+  "editExpressionText": {
+    "message": "编辑表达式",
+    "description": "Edit expression"
+  },
+  "toggleToGreyListWordText": {
+    "message": "切换到绿名单",
+    "description": "Toggle to greylist"
+  },
+  "toggleToWhiteListWordText": {
+    "message": "切换到白名单",
+    "description": "Toggle to whitelist"
+  },
+  "autoDeleteEnabledText": {
+    "message": "自动清理已启用",
+    "description": "Auto-clean enabled"
+  },
+  "autoDeleteDisabledText": {
+    "message": "自动清理已禁用",
+    "description": "Auto-clean disabled"
+  },
+  "disableAutoDeleteText": {
+    "message": "切换来禁用自动清理（手动模式）",
+    "description": "Toggle to disable automatic cleanup (manual mode)"
+  },
+  "enableAutoDeleteText": {
+    "message": "切换来启用自动清理（自动模式）",
+    "description": "Toggle to enable automatic cleanup (automatic mode)"
+  },
+  "notificationEnabledText": {
+    "message": "通知已启用",
+    "description": "Notification enabled"
+  },
+  "notificationDisabledText": {
+    "message": "通知已停用",
+    "description": "Notification disabled"
+  },
+  "toggleNotificationText": {
+    "message": "切换以启用或禁用通知",
+    "description": "Toggle to enable or disable notifications"
+  },
+  "noCleanupLogText": {
+    "message": "没有找到清理日志",
+    "description": "No Cleanup Logs Found"
+  }
+}

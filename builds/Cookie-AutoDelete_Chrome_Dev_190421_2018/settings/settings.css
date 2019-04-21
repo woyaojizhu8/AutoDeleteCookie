@@ -1,0 +1,194 @@
+button:hover {
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+h1 {
+  border-bottom: 1px solid #808080;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  margin: 5px;
+  border-collapse: collapse;
+  max-height: 10px;
+}
+
+#tableContainer {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 15em;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+.removeIcon {
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+.removeIcon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition-duration: 0.15s;
+}
+
+.content {
+  padding-left: 12em;
+  width: 40em;
+}
+
+#welcomeContent h2 {
+  font-size: 3rem;
+}
+
+#welcomeContent span {
+  font-weight: bold;
+}
+
+input[type='number'] {
+  width: 5em;
+}
+
+.file-upload {
+  color: #337ab7;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 4px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+#menu {
+  background-color: #26292e;
+  height: 100%;
+  position: fixed;
+}
+
+.pure-menu {
+  padding-top: 2em;
+}
+
+.pure-menu-item {
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.pure-menu-item:hover {
+  cursor: pointer;
+  transition: background-color;
+  transition-duration: 0.15s;
+  background-color: #808080;
+}
+
+.pure-menu-item span {
+  color: #c1c1b4;
+  font: message-box;
+}
+
+.pure-menu-selected {
+  background: #808080 !important;
+  background-color: #808080;
+  border-style: none none none solid;
+  border-left-color: #0288d1;
+}
+
+/* The close button */
+
+.removeButton {
+  /*
+  color: white;
+  float: right;
+  */
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* When moving the mouse over the close button */
+
+.removeButton:hover {
+  color: #808080;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.tooltipCustom {
+  font-size: 18px;
+  font-weight: 700;
+  color: #777;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.tooltipCustom:hover {
+  cursor: pointer;
+}
+
+.addHover:hover {
+  cursor: pointer;
+}
+
+.expressionTable tr .showOnRowHover {
+  visibility: hidden;
+}
+
+.expressionTable tr:hover .showOnRowHover {
+  visibility: visible;
+}
