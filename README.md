@@ -5,7 +5,7 @@
 # AutoDeleteCookie
 This is a modified version of the Firefox extension Cookie AutoDelete (https://github.com/Cookie-AutoDelete/Cookie-AutoDelete). The only difference between the two extension is, AutoDeleteCookie will delete all cookies ,including cookies of other tabs or sites (Localstorage will also be deleted if you set including Localstorage as well) every time you close a tab, while the original Cookie AutoDelete will check if there is opened tabs belonging to the same domain as the closed tab before deleting  cookies releted to the closed tab (Localstorage will also be deleted if you set including Localstorage as well).
 
-这是一个Firefox扩展Cookie AutoDelete (https://github.com/Cookie-AutoDelete/Cookie-AutoDelete)的修改版。两者之间唯一的区别是，AutoDeleteCookie在你关闭任意一个标签页时都会删除当前所有cookie（包括其他标签页其他网站的，如果设置了包括Localstorage，也会删之），并不会像Cookie AutoDelete那样，检查其他标签页里还有没有打开着的跟这个关闭的标签页同一个网站的页面，如果没有，才删除这个标签页相关的cookie（如果设置了包括Localstorage，也会删之）。
+这是一个Firefox扩展Cookie AutoDelete (https://github.com/Cookie-AutoDelete/Cookie-AutoDelete )的修改版。两者之间唯一的区别是，AutoDeleteCookie在你关闭任意一个标签页时都会删除当前所有cookie（包括其他标签页其他网站的，如果设置了包括Localstorage，也会删之），并不会像Cookie AutoDelete那样，检查其他标签页里还有没有打开着的跟这个关闭的标签页同一个网站的页面，如果没有，才删除这个标签页相关的cookie（如果设置了包括Localstorage，也会删之）。
 
 # Cookie AutoDelete
 Control your cookies! This extension is inspired by [Self-Destructing Cookies](https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/). When a tab closes, any cookies not being used are automatically deleted. Prevent tracking by other cookies and add only the ones you trust. Easily import and export your cookie whitelist.
